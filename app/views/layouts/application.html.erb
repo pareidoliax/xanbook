@@ -10,13 +10,20 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">Xanbook</a>
-          <ul class="nav">
-            <li><a href="#">Home</a></li>
+          <a href="#" class="brand">Xanbook</a>
+          <ul class="nav"> 
             <li><%= link_to 'All Statuses', statuses_path  %></li>
-            <li><a href="#">Link</a></li>
           </ul>
-      </div>
+          <ul class="nav pull-right">
+            <% if user_signed_in? %>
+              <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
+              <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            <% else %>
+              <li><%= link_to "Sign In", new_user_session_path %></li>
+              <li><%= link_to "Register", new_user_registration_path %></li>
+            <% end %>
+          </ul>
+        </div>
       </div>
     </div>
   <p class="notice"><%= notice %></p>

@@ -1,5 +1,11 @@
 Xanbook::Application.routes.draw do
 
+  get "basic/home"
+
+  get "basic/about"
+
+  get "basic/welcome"
+
   devise_for :users
 
   root to: 'statuses#index'
