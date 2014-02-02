@@ -6,6 +6,8 @@ Xanbook::Application.routes.draw do
 
   get 'welcome', to: 'basic#welcome', as: :welcome
 
+  get 'feed', to: 'statuses#index', as: :feed
+
   devise_for :users
 
   devise_scope :user do
