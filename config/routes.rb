@@ -1,5 +1,7 @@
 Xanbook::Application.routes.draw do
 
+  get "profiles/show"
+
   get 'home', to: 'basic#home', as: :home
 
   get 'about', to: 'basic#about', as: :about
