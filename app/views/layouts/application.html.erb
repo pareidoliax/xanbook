@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <%= link_to 'Xanbook', root_path, class: 'brand' %>
@@ -38,6 +38,9 @@
     
     <%= yield %>
 
+    <div class="footer">
+      <p>Xander Miller 2014</p>
+    </div>
   </div>
 </body>
 </html>

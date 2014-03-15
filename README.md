@@ -8,3 +8,4 @@ Xanbook lets users sign up, sign in and post and read status updates of other us
 + Deployed to Heroku
 + [Devise](https://github.com/plataformatec/devise) authentication
 + [Simple Form](https://github.com/plataformatec/simple_form) for simpler form coding
++ Test Driven Development using Test::Unit
